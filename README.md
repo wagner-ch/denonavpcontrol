@@ -25,11 +25,16 @@ The plugin has only been tested with the Denon AVP-A1HD and the Squeezebox Recei
   * Supports 100% volume setting on players with iPeng 1.2.5 and greater.  Volume control has been changed to be less linear with more loudness in the lower settings.
   * Supports .5 settings on volume adjustment to Denon
   
-# Installation
-See the [Installation Instructions](https://github.com/aesculus/denonavpcontrol/blob/master/wiki/InstallationInstructions.wiki)
+## Installation
+See the [Installation Instructions](../wiki/InstallationInstructions.wiki)
 
-# How to Use
-See [How to Use](https://github.com/aesculus/denonavpcontrol/blob/master/wiki/HowToUse.wiki)
+## How to Use
+See [How to Use](../HowToUse.wiki)
+
+## Changelog
+
+See [Changelog](CHANGELOG.md)
+
 ## Licence
 
 The MIT License
