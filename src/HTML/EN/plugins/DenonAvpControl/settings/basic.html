@@ -34,6 +34,14 @@
 	               	</select>
 		[% END %]
 
+		[% WRAPPER settingGroup title="PLUGIN_DENONAVPCONTROL_SISELECT" desc="PLUGIN_DENONAVPCONTROL_SISELECT_DESC" %]
+        	       	<select name="[% pw.pref_prefix %]quickSelect">
+                	       	<option value="0" [% IF prefs.siDigitalInSelect == "0" %]selected[% END %]>[% "DISABLED" | string %]</option>
+                        	<option value="1" [% IF prefs.siDigitalInSelect == "1" %]selected[% END %]>[% "PLUGIN_DENONAVPCONTROL_SI_DIGITALIN1" | string %]</option>
+       	               	 	<option value="2" [% IF prefs.siDigitalInSelect == "2" %]selected[% END %]>[% "PLUGIN_DENONAVPCONTROL_SI_DIGITALIN2" | string %]</option>
+	               	</select>
+		[% END %]
+
 		[% WRAPPER settingGroup title="PLUGIN_DENONAVPCONTROL_ZONE" desc="PLUGIN_DENONAVPCONTROL_ZONE_DESC" %]
         	       	<select name="[% pw.pref_prefix %]zone">
                 	       	<option value="0" [% IF prefs.zone == "0" %]selected[% END %]>[% "PLUGIN_DENONAVPCONTROL_ZONE1" | string %]</option>

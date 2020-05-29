@@ -180,6 +180,7 @@ sub handler {
 			$prefs->client($client)->set('maxVol', "$maxVol");
 		}
 		$prefs->client($client)->set('quickSelect', "$params->{'quickSelect'}");
+		$prefs->client($client)->set('siDigitalInSelect', "$params->{'siDigitalInSelect'}");
 		$prefs->client($client)->set('zone', "$params->{'zone'}");
 	}
 
@@ -202,8 +203,9 @@ sub handler {
 	$params->{'prefs'}->{'delayQuick'} = $prefs->client($client)->get('delayQuick'); 
 	$params->{'prefs'}->{'maxVol'} = $prefs->client($client)->get('maxVol'); 
 	# set the quick select setting on the web page	
-	$params->{'prefs'}->{'quickSelect'} = $prefs->client($client)->get('quickSelect'); 
-	$params->{'prefs'}->{'zone'} = $prefs->client($client)->get('zone'); 
+	$params->{'prefs'}->{'quickSelect'} = $prefs->client($client)->get('quickSelect');
+	$params->{'prefs'}->{'siDigitalInSelect'} = $prefs->client($client)->get('siDigitalInSelect');
+	$params->{'prefs'}->{'zone'} = $prefs->client($client)->get('zone');
 	
 	#set the plugin class variables
 #	$classPlugin->setAvpAddress($prefs->client($client)->get('avpAddress'));

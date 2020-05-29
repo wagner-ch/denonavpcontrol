@@ -315,9 +315,21 @@ sub SendNetAvpQuickSelect {
 	my $url = shift;
 	my $quickSelect = shift;
 
-	$log->debug("Calling writemsg for quick select command");	
+	$log->debug("Calling writemsg for quick select command");
 	my $request= "MSQUICK" . $quickSelect . $CR;
-#	my $request= "MV55" . $CR ;
+	#	my $request= "MV55" . $CR ;
+	writemsg($request, $client, $url);
+}
+
+# ----------------------------------------------------------------------------
+sub SendNetAvpSIDIGITALINSelect {
+	my $client = shift;
+	my $url = shift;
+	my $siDigitalInSelect = shift;
+
+	$log->debug("Calling writemsg for siDigitalIn select command");
+	my $request= "SIDIGITALIN" . $siDigitalInSelect . $CR;
+	#	my $request= "MV55" . $CR ;
 	writemsg($request, $client, $url);
 }
 
